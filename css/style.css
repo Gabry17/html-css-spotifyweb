@@ -23,9 +23,37 @@ a{
 .sidebar {
     width: 200px;
     height: calc(100vh - 120px);
-    background-color: red;
+    background-color: black;
+    padding-top: .7em;
 }
 
+.sidebar img{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.logo{
+    padding-left: 1em;
+}
+
+.cont{
+    border-left: 4px solid greenyellow;
+}
+
+.home{
+    display: flex;
+}
+
+.home img{
+    width: 15%;
+    margin-left: 1em;
+}
+
+.home h4{
+    color: white;
+    padding-top: .3em;
+}
 /* CONT-H-M */
 .cont-h-m {
     width: calc(100% - 200px);
