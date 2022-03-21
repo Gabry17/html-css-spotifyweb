@@ -10,6 +10,10 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* CONTAINER */
 .container {
     display: flex;
@@ -18,28 +22,41 @@ html {
 /* SIDEBAR */
 .sidebar {
     width: 200px;
+    height: calc(100vh - 120px);
     background-color: red;
 }
 
 /* CONT-H-M */
 .cont-h-m {
     width: calc(100% - 200px);
+    background-color: black;
 }
 
 /* HEADER */
 .header {
-    background-color: #c7b195;
-    height: 10vh;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
 }
+
+.header a {
+    color: white;
+    border: 2px solid white;
+    margin-right: .3em;
+    padding: .7em 2em;
+    border-radius: 3em;
+}
+
 
 /* MAIN */
 .main { 
-    height: 77vh;
-    background-color: #807261;
+    height: calc(100vh - 200px);
 }
 
 /* FOOTER */
 .cont-footer{
-    height: 13vh;
+    height: 120px;
     background-color: yellowgreen;
 }
