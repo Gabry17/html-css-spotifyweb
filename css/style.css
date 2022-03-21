@@ -1,27 +1,45 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* COMMON */
-html{
+html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: black;
+/* CONTAINER */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background-color: red;
+}
+
+/* CONT-H-M */
+.cont-h-m {
+    width: calc(100% - 200px);
 }
 
 /* HEADER */
-header{
-    display: flex;
-    justify-content: flex-end;
+.header {
+    background-color: #c7b195;
+    height: 10vh;
 }
 
-.container{
-    background-color: blue;
-    height: 10vh;
-    width: 85%;
+/* MAIN */
+.main { 
+    height: 77vh;
+    background-color: #807261;
+}
+
+/* FOOTER */
+.cont-footer{
+    height: 13vh;
+    background-color: yellowgreen;
 }
