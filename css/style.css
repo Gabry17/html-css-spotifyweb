@@ -25,6 +25,7 @@ a{
     height: calc(100vh - 120px);
     background-color: #000000;
     padding-top: .7em;
+    position: relative;
 }
 
 /* logo */
@@ -94,6 +95,7 @@ h2{
     color: gray;
 }
 
+/* list */
 .list{
     color: gray;
     list-style: none;
@@ -102,6 +104,45 @@ h2{
 
 .list li{
     padding: .7em 0;
+}
+
+/* part-down */
+.part-down{
+    position: absolute;
+    bottom: .5em;
+}
+
+.install{
+    color: gray;
+    display: flex;
+    margin-left: 1em;
+}
+
+.install i{
+    margin-right: 1em;
+}
+
+.hr{
+    background-color: gray;
+    height: 1px;
+    width: 170px;
+    margin: .5em 0 0 1em;
+}
+
+.jhon{
+    display: flex;
+    align-items: center;
+    margin: .5em 0 0 1em;
+}
+
+.jhon i{
+    font-size: 2em;
+    color: gray;
+}
+
+.jhon p{
+    color: white;
+    margin-left: .5em;
 }
 
 /* CONT-H-M */
