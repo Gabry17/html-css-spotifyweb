@@ -23,10 +23,11 @@ a{
 .sidebar {
     width: 200px;
     height: calc(100vh - 120px);
-    background-color: black;
+    background-color: #000000;
     padding-top: .7em;
 }
 
+/* logo */
 .sidebar img{
     width: 80%;
     text-align: center;
@@ -37,23 +38,72 @@ a{
     padding-left: 1em;
 }
 
+/* home */
 .cont{
-    border-left: 4px solid greenyellow;
+    border-left: 2px solid greenyellow;
 }
 
 .home{
     display: flex;
+    padding-top: .5em;
 }
 
-.home img{
-    width: 15%;
+.width img{
+    width: 13%;
     margin-left: 1em;
+    margin-right: .5em;
 }
 
-.home h4{
+h4{
     color: white;
     padding-top: .3em;
 }
+
+/* search and library*/
+.search{
+    display: flex;
+}
+.search p{ 
+    color: gray;
+    display: inline-block;
+    padding-top: .3em;
+}
+
+/* playlist */
+h2{
+    color: white;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.playlist{
+    display: flex;
+    margin-top: .5em;
+    margin-left: 1em;
+    align-items: center;
+}
+
+.playlist p{
+    color: gray;
+}
+
+.playlist i{
+    font-size: 2em;
+    margin-right: .3em;
+    color: gray;
+}
+
+.list{
+    color: gray;
+    list-style: none;
+    margin-left: 1em;
+}
+
+.list li{
+    padding: .7em 0;
+}
+
 /* CONT-H-M */
 .cont-h-m {
     width: calc(100% - 200px);
