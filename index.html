@@ -12,7 +12,7 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container flex">
 
         <!-- SIDEBAR -->
         <div class="sidebar">
@@ -23,33 +23,33 @@
 
             <!-- home -->
             <div class="cont">
-                <div class="home width img-cont">
-                    <img src="img/home.svg" alt="">
-                    <h4>Home</h4>
+                <div class="home flex width img-cont">
+                    <img class="mg-left" src="img/home.svg" alt="">
+                    <h4 class="white">Home</h4>
                 </div>
             </div>
 
             <!-- search -->
-            <div class="search width">
-                <img src="img/search.svg" alt="lente">
-                <p>Cerca</p>
+            <div class="search flex width">
+                <img class="mg-left" src="img/search.svg" alt="lente">
+                <p class="gray fs-15">Cerca</p>
             </div>
             
             <!-- library -->
-            <div class="search width ">
-                <img src="img/libreria.svg" alt="library">
-                <p>La tua libreria</p>
+            <div class="search flex width ">
+                <img class="mg-left" src="img/libreria.svg" alt="library">
+                <p class="gray fs-15">La tua libreria</p>
             </div>
 
             <!-- playlist -->
-            <h2>PLAYLIST</h2>
-            <div class="playlist">
+            <h2 class="white text mg-left"> PLAYLIST</h2>
+            <div class="playlist flex mg-left">
                 <i class="fas fa-plus-square"></i>
-                <p>Crea playlist</p>
+                <p class="gray">Crea playlist</p>
             </div>
 
-            <div>
-                <ul class="list">
+            <div class="side-scroll">
+                <ul class="list fs-15 mg-left gray">
                     <li>Nome playlist</li>
                     <li>Nome playlist</li>
                     <li>Nome playlist</li>
@@ -59,16 +59,16 @@
             </div>
 
             <div class="part-down">
-                <div class="install">
+                <div class="install flex mg-left gray">
                     <i class="fas fa-arrow-alt-circle-down"></i>
-                    <p>Installa App</p>
+                    <p class="fs-15">Installa App</p>
                 </div>
 
                 <div class="hr"></div>
 
-                <div class="jhon">
+                <div class="jhon flex">
                     <i class="fas fa-user-circle"></i>
-                    <p>Jhon Doe</p>
+                    <p class="white">Jhon Doe</p>
                 </div>
     
             </div>
@@ -80,14 +80,88 @@
         <div class="cont-h-m">
 
             <!-- HEADER -->
-            <div class="header">
-                <a href="">EFFETTUA L'UPGRADE</a>
+            <div class="header flex">
+                <a class="white" href="">EFFETTUA L'UPGRADE</a>
             </div>
             <!-- /HEADER -->
 
             <!-- MAIN -->
             <div class="main">
+                <ul class="flex main-nav gray">
+                    <li>IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
+                </ul>
 
+                <h2 class="title-main">Recently played</h2>
+                
+                <div class="cont-main flex">
+                    
+                    <div class="card">
+                        <img src="img/metal_lifting.jpg" alt="heavy metal">
+                        <p class="fs-15 genere">Heavy Metal</p>
+                        <p class="fs-10 gray">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/stranger.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</p>
+                        <p class="fs-10 gray">Kyle Dixon & Micheal Stein</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/aquietplace.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">A quiet place</p>
+                        <p class="fs-10 gray">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/split.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Split</p>
+                        <p class="fs-10 gray">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/cure.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">A cure of wellness</p>
+                        <p class="fs-10 gray">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/sinister.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Sinister</p>
+                        <p class="fs-10 gray">Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="text2">
+                    <h2>Creato per Jhon Doe</h2>
+                    <p class="gray">Piú ascolti piú accurati saranno i suggerimenti.</p>
+                </div>
+                <div class="flex cont-main">
+                    <div class="card">
+                        <img src="img/radar.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Release Radar</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/mixdaily.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Daily mix 1</p>
+                    </div>
+                </div>
+
+                <div class="text2">
+                    <h2>Artisti piú popolari</h2>
+                    <p class="gray">Piú ascolti piú accurati saranno i suggerimenti.</p>
+                </div>
+                <div class="flex cont-main artisti">
+                    <div class="card">
+                        <img class="b-radius" src="img/radar.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Lana Del Rey</p>
+                    </div>
+                    <div class="card">
+                        <img class="b-radius" src="img/mixdaily.jpeg" alt="heavy metal">
+                        <p class="fs-15 genere">Ludovico Einaudi</p>
+                    </div>
+                </div>
+                
             </div>
             <!-- /MAIN -->
 
@@ -97,8 +171,46 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="cont-footer">
-
+        <div class="cont-footer flex">
+            <div class="col flex">
+                <div class="col-right"></div>
+                <div class="text-foot flex">
+                    <h3>Sinister</h3>
+                    <p class="gray">Brano Nome</p>
+                </div>
+                <div class="icon-foot gray flex">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-folder"></i>
+                </div>
+            </div>
+            <div class="col-center">
+                <div class="music-icon flex">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-caret-left"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-caret-right"></i>
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="music-bar flex">
+                    <div class="time">0:25</div>
+                    <div class="bar flex">
+                        <div class="bar-white"></div>
+                        <div class="bar-gray"></div>
+                    </div>
+                    <div class="time end flex">4:35</div>
+                </div>
+            </div>
+            <div class="col col-left flex">
+                <div class="icon-end flex">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="bar-end flex ">
+                    <div class="bar-white"></div>
+                    <div class="bar-gray"></div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

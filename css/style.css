@@ -14,9 +14,30 @@ a{
     text-decoration: none;
 }
 
-/* CONTAINER */
-.container {
+.white{
+    color: white;
+}
+
+.gray,
+.playlist i,
+.jhon i {
+    color: gray;
+}
+
+.mg-left{
+    margin-left: 1em;
+}
+
+.flex{
     display: flex;
+}
+
+.fs-15{
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
 }
 
 /* SIDEBAR */
@@ -45,63 +66,41 @@ a{
 }
 
 .home{
-    display: flex;
     padding-top: .5em;
 }
 
 .width img{
     width: 13%;
-    margin-left: 1em;
     margin-right: .5em;
 }
 
 h4{
-    color: white;
     padding-top: .3em;
 }
 
 /* search and library*/
-.search{
-    display: flex;
-}
 .search p{ 
-    color: gray;
     display: inline-block;
     padding-top: .3em;
 }
 
 /* playlist */
-h2{
-    color: white;
+.text{
     font-size: 1em;
-    margin-left: 1em;
     margin-top: 1em;
 }
 
 .playlist{
-    display: flex;
     margin-top: .5em;
-    margin-left: 1em;
     align-items: center;
-}
-
-.playlist p{
-    color: gray;
 }
 
 .playlist i{
     font-size: 2em;
     margin-right: .3em;
-    color: gray;
 }
 
 /* list */
-.list{
-    color: gray;
-    list-style: none;
-    margin-left: 1em;
-}
-
 .list li{
     padding: .7em 0;
 }
@@ -110,12 +109,6 @@ h2{
 .part-down{
     position: absolute;
     bottom: .5em;
-}
-
-.install{
-    color: gray;
-    display: flex;
-    margin-left: 1em;
 }
 
 .install i{
@@ -130,38 +123,38 @@ h2{
 }
 
 .jhon{
-    display: flex;
     align-items: center;
     margin: .5em 0 0 1em;
 }
 
 .jhon i{
     font-size: 2em;
-    color: gray;
 }
 
 .jhon p{
-    color: white;
     margin-left: .5em;
 }
 
 /* CONT-H-M */
 .cont-h-m {
     width: calc(100% - 200px);
-    background-color: black;
+    color: white;
+    overflow: hidden;
 }
 
 /* HEADER */
 .header {
     height: 80px;
-    display: flex;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
+    /* position: fixed;
+    top: 0;
+    left: 0; */
 }
 
 .header a {
-    color: white;
     border: 2px solid white;
     margin-right: .3em;
     padding: .7em 2em;
@@ -172,10 +165,190 @@ h2{
 /* MAIN */
 .main { 
     height: calc(100vh - 200px);
+    overflow: auto;
+    background-color: #14161c;
 }
 
+/* list */
+.main-nav{
+    justify-content: center;
+    margin: 1em 0 3em;
+}
+
+.main-nav li{
+    margin-right: 1.5em;
+}
+
+/* card */
+.cont-main{
+    margin-left: 2em;
+}
+
+.title-main{
+    margin-bottom: 1em;
+    margin-left: 1.3em;
+}
+
+.card{
+    width: 230px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.card img{
+    width: 100%;
+}
+
+.genere{
+    margin: .5em 0;
+}
+
+.text2 h2{
+    margin-bottom: .5em;
+    margin-top: 2em;
+}
+
+.text2{
+    margin-left: 2em;
+    margin-bottom: 3em;
+}
+
+.b-radius{
+    border-radius: 50%;
+}
+
+.artisti{
+    margin-bottom: 20em;
+}
 /* FOOTER */
 .cont-footer{
     height: 120px;
-    background-color: yellowgreen;
+    background-color: #212121;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
+
+/* col-right */
+.col{
+    width: 20%;
+}
+
+.col-left{
+    height: 100px;
+}
+
+.col-right{
+    height: 70px;
+    width: 70px;
+    background-image: url(../img/sinister.jpeg);
+    background-size: cover;
+    margin-left: 1em;
+}
+
+.text-foot{
+    padding-left: .7em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-foot{
+    align-items: center;
+    padding-left: 1em;
+}
+
+.icon-foot i{
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+/* col-center */
+
+.col-center{
+    width: 40%;
+} 
+
+.music-icon{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.music-icon i:nth-of-type(1){
+    font-size: 2em;
+    margin-right: .5em;
+}
+
+.music-icon i:nth-of-type(2),
+.music-icon i:nth-of-type(4){
+    font-size: 2.5em;
+}
+
+.music-icon i:nth-of-type(3){
+    font-size: 3em;
+    margin: 0 .7em;
+}
+.music-icon i:nth-of-type(5){
+    font-size: 2em;
+    margin-left: .5em;
+}
+
+/* time */
+.time{
+    width: 10%;
+    height: 20px;
+}
+
+/* bar */
+.bar{
+    width: 80%;
+    height: 20px;
+    align-items: center;
+}
+
+.bar-white{
+    width: 20%;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.bar-gray{
+    width: 80%;
+    height: 5px;
+    background-color: rgb(77, 74, 74);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* time-end */
+.end{
+    justify-content: flex-end;
+}
+
+/* col-left */
+.col-left{
+    margin-right: 1em;
+    height: 30px;
+}
+
+.icon-end{
+    width: 30%;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.icon-end i{
+    font-size: 1.2em;
+}
+
+.icon-end i:nth-of-type(2){
+    margin: 0 1em;
+}
+
+.bar-end{
+    width: 70%;
+    align-items: center;
+}
+
+
