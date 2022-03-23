@@ -230,7 +230,8 @@ h4,
 
 /* card */
 .cont-main{
-    margin-left: 2em;
+    padding: 2em;
+    flex-wrap: wrap;
 }
 
 .title-main{
@@ -239,17 +240,17 @@ h4,
 }
 
 .card{
-    width: 230px;
     text-align: center;
-    margin-right: 1em;
     position: relative;
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
 }
 
 .filter::before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 250px;
+    /* height: auto; */
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .5);
@@ -279,7 +280,6 @@ h4,
 
 .card img{
     width: 100%;
-    height: 250px; 
 }
 
 .genere{
@@ -293,7 +293,7 @@ h4,
 
 .text2{
     margin-left: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .b-radius{
@@ -332,7 +332,6 @@ h4,
     width: 50px;
     background-image: url(../img/sinister.jpeg);
     background-size: cover;
-    /* margin-left: .7em; */
 }
 
 .text-foot{
@@ -467,9 +466,31 @@ h4,
     border-bottom-right-radius: 3px;
 }
 
-/* MEDIA SIDE-BAR */
-@media screen and (max-width: 600px){
+/* MEDIA 1100 */
+@media screen and (max-width: 1100px){
+    /* main */
+    .card{
+        width: calc(100% / 4 - 10px);
+    }
+    .mg-top{
+        margin-top: 1em;
+    }
+}
 
+/* MEDIA 700 */
+@media screen and (max-width: 700px){
+    /* main */
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .mg-top2{
+        margin-top: 1em;
+    }
+}
+
+/* MEDIA 600 */
+@media screen and (max-width: 600px){
     /* sidebar */
     .sidebar{
        width: 50px;
