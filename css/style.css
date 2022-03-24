@@ -40,6 +40,10 @@ a{
     background-color: #c6fe58;
 }
 
+.play:hover{
+    font-size: 2.2em;
+}
+
 .svg{
     opacity:.4;
 }
@@ -391,7 +395,8 @@ h4,
 
 .play{
     font-size: 1.9em;
-    margin: 0 13px;
+    width: 80px;
+    text-align: center;
 }
 
 /* time */
