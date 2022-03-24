@@ -26,8 +26,13 @@ a{
 .install:hover i,
 .install:hover p,
 .search:hover p,
-.text-foot:hover p{
+.text-foot p:hover{
     color: white;
+}
+
+.text-foot p:hover,
+.text-foot h3:hover{
+    text-decoration: underline;
 }
 
 .music-bar:hover .bar-white,
@@ -35,9 +40,21 @@ a{
     background-color: #c6fe58;
 }
 
+.svg{
+    opacity:.4;
+}
+
+.search:hover img{
+    opacity: 1;
+}
+
 .music-bar:hover .circle,
 .bar-end:hover .circle{
     display: block;
+}
+
+.icon-foot i:hover{
+    color: white;
 }
 
 .gray,
@@ -240,7 +257,7 @@ h4,
 }
 
 .title-main{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .card{
@@ -254,9 +271,15 @@ h4,
     width: 100%;
 }
 
-.filter::before{
+.card:hover .filter::before{
+    cursor: pointer;
     content: "\f144";
     position: absolute;
+    font-family: "Font Awesome 5 Free";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
     width: 100%;
     height: 100%;
     top: 0;
@@ -270,7 +293,6 @@ h4,
 }
 
 .filter{
-    display: none;
     position: relative;
 }
 
@@ -280,13 +302,7 @@ h4,
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
-    
 }
-
-.card:hover .filter{
-    display: block;
-}
-
 
 .genere{
     margin: .5em 0;
@@ -298,8 +314,7 @@ h4,
 }
 
 .text2{
-    margin-left: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .b-radius{
@@ -329,10 +344,6 @@ h4,
     width: 250px;
 }
 
-.col-left{
-    height: 100px;
-}
-
 .col-right{
     height: 50px;
     width: 50px;
@@ -349,52 +360,47 @@ h4,
 
 .icon-foot{
     align-items: center;
-    margin-left: .5em;
-    
+     margin-left: 1em;
 }
 
 .icon-foot i{
-    padding: .5em;
+    padding: .4em;
 }
 
 /* col-center */
 .col-center{
-    width: 50%;
-    padding: 0 2em;
+    width: 40%;
+    margin: 0 1em;
+    height: 100%;
 }
 
 .music-icon{
     justify-content: center;
     align-items: center;
+    height: 60%;
 }
 
-.music-icon i:nth-of-type(1){
+.music-icon i{
     font-size: 1.5em;
-    margin-right: .5em;
+    margin: 0 9px;
 }
 
-.music-icon i:nth-of-type(2),
-.music-icon i:nth-of-type(4){
-    font-size: 2em;
+.i-style{
+    font-size: 1.7em;
 }
 
-.music-icon i:nth-of-type(3){
-    font-size: 2.5em;
-    margin: 0 .7em;
-}
-.music-icon i:nth-of-type(5){
-    font-size: 1.5em;
-    margin-left: .5em;
-}
-
-.music-bar{
-    margin-top: .5em;
-    
+.play{
+    font-size: 1.9em;
+    margin: 0 13px;
 }
 
 /* time */
-.time{
-    padding: 0 1em;
+.time1{
+    margin-right: 1em;
+}
+
+.time2{
+    margin-left: 1em;
 }
 
 /* bar */
@@ -440,7 +446,6 @@ h4,
 
 .icon-end{
     align-items: center;
-    justify-content: flex-end;
 }
 
 .icon-end i{
@@ -448,18 +453,18 @@ h4,
 }
 
 .icon-end i:nth-of-type(2){
-    margin: 0 1em;
+    margin: 0 .7em;
 }
 
 .bar-end{
     width: 100%;
     align-items: center;
-    justify-content: flex-end;
+    padding-left: 1em;
 }
 
 .bar-white-end{
     width: 30%;
-    background-color: white;
+    background-color: lightgray;
     height: 5px;
     border-radius: 3px;
 }
@@ -543,15 +548,21 @@ h4,
     }
 
     /* header main */
-    .header,
-    .main{
+    .cont-h-m,
+    .header{
         width: calc(100% - 50px);
     }
 
     /* footer */
     .icon-foot{
         flex-direction: column;
+        margin-left: 0;
     }
+
+    .col-center{
+        margin: 0 .5em;
+    }
+
 
 }
 
